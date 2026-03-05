@@ -40,3 +40,6 @@ projects:
 
       - endpoint: drpc://${DRPC_API_KEY}
         group: drpc
+
+      - endpoint: alchemy://${ALCHEMY_API_KEY}
+        group: alchemy 
