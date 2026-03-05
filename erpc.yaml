@@ -37,3 +37,6 @@ projects:
         id: tenderly-arbitrum
         evm:
           chainId: 42161
+
+      - endpoint: drpc://${DRPC_API_KEY}
+        group: drpc
