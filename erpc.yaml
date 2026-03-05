@@ -10,3 +10,30 @@ metrics:
   hostV4: "0.0.0.0"
   hostV6: "[::]"
   port: 4001
+
+projects:
+  - id: main
+    upstreams:
+      - endpoint: ${TENDERLY_MAINNET_URL}
+        group: tenderly
+        id: tenderly-mainnet
+        evm:
+          chainId: 1
+    
+      - endpoint: ${TENDERLY_OPTIMISM_URL}
+        group: tenderly
+        id: tenderly-optimism
+        evm:
+          chainId: 10
+    
+      - endpoint: ${TENDERLY_BASE_URL}
+        group: tenderly
+        id: tenderly-base
+        evm:
+          chainId: 8453
+    
+      - endpoint: ${TENDERLY_ARBITRUM_URL}
+        group: tenderly
+        id: tenderly-arbitrum
+        evm:
+          chainId: 42161
